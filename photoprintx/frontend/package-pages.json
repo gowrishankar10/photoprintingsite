@@ -1,0 +1,12 @@
+{
+  "name": "we3studio-frontend",
+  "version": "1.0.0",
+  "description": "We3Studio Frontend for GitHub Pages",
+  "scripts": {
+    "build": "ng build --configuration production --base-href \"/photoprintingsite/\"",
+    "deploy": "ng build --configuration production --base-href \"/photoprintingsite/\" && npx angular-cli-ghpages --dir=dist/photoprintx-frontend"
+  },
+  "devDependencies": {
+    "angular-cli-ghpages": "^1.0.3"
+  }
+}
