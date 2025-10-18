@@ -1,47 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>PhotoPrintX - Redirecting...</title>
-    <meta http-equiv="refresh" content="5;url=https://gowrishankar10.github.io/photoprintingsite/photoprintx/frontend/dist/photoprintx-frontend/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoPrintX - Photo Printing Service</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
         }
         .container {
-            max-width: 600px;
-            margin: 0 auto;
             background: white;
             padding: 30px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-top: 30px;
         }
-        .redirect-message {
-            color: #333;
-            font-size: 18px;
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #3498db;
+            margin-top: 30px;
+        }
+        .status {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
             margin: 20px 0;
         }
-        .link {
-            color: #007bff;
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+        }
+        .instructions {
+            background: #e9f7fe;
+            border-left: 4px solid #3498db;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .credentials {
+            background: #f1f2f6;
+            border-radius: 5px;
+            padding: 15px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+        a {
+            color: #3498db;
             text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px 5px;
             font-weight: bold;
         }
-        .link:hover {
-            text-decoration: underline;
+        .btn:hover {
+            background: #2980b9;
+            text-decoration: none;
+        }
+        .btn.secondary {
+            background: #95a5a6;
+        }
+        .btn.secondary:hover {
+            background: #7f8c8d;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+            font-size: 0.9em;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>PhotoPrintX Application</h1>
-        <div class="redirect-message">
-            If you are not redirected automatically, please visit:
-            <br><br>
-            <a class="link" href="https://gowrishankar10.github.io/photoprintingsite/photoprintx/frontend/dist/photoprintx-frontend/">https://gowrishankar10.github.io/photoprintingsite/photoprintx/frontend/dist/photoprintx-frontend/</a>
+        <h1>PhotoPrintX - Photo Printing Service</h1>
+        
+        <div class="status">
+            <h2>🚀 Deployment Status</h2>
+            <p>The PhotoPrintX application has been deployed but may still be processing on GitHub Pages.</p>
+            <p><strong>Current Status:</strong> ⏳ Processing (May take 1-2 minutes)</p>
         </div>
-        <p>The application is being deployed. This may take a few minutes.</p>
+        
+        <h2>🌐 Access the Application</h2>
+        <p>Once deployed, the application will be available at:</p>
+        <div class="credentials">
+            <strong>Live URL:</strong> <a href="https://gowrishankar10.github.io/photoprintingsite/" target="_blank">https://gowrishankar10.github.io/photoprintingsite/</a>
+        </div>
+        
+        <h2>🔧 If the URL doesn't work</h2>
+        <p>Try these alternative URLs:</p>
+        <div class="credentials">
+            <strong>Direct Access:</strong> <a href="https://gowrishankar10.github.io/photoprintingsite/index.html" target="_blank">https://gowrishankar10.github.io/photoprintingsite/index.html</a>
+        </div>
+        
+        <h2>🖥️ Local Development</h2>
+        <p>To run the application locally:</p>
+        <div class="instructions">
+            <p><strong>1. Start the backend server:</strong></p>
+            <div class="credentials">
+                cd photoprintx/backend<br>
+                npm start
+            </div>
+            
+            <p><strong>2. In a new terminal, start the frontend:</strong></p>
+            <div class="credentials">
+                cd photoprintx/frontend<br>
+                npm start
+            </div>
+            
+            <p><strong>3. Access the application:</strong></p>
+            <div class="credentials">
+                Frontend: <a href="http://localhost:4200" target="_blank">http://localhost:4200</a><br>
+                Backend API: <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+            </div>
+        </div>
+        
+        <h2>🔐 Admin Access</h2>
+        <p>Once the application is running, you can access the admin dashboard:</p>
+        <div class="credentials">
+            <strong>Admin URL:</strong> /admin<br>
+            <strong>Email:</strong> admin@example.com<br>
+            <strong>Password:</strong> admin123
+        </div>
+        
+        <h2>🛠️ Technologies Used</h2>
+        <ul>
+            <li><strong>Frontend:</strong> Angular 17+</li>
+            <li><strong>Backend:</strong> Node.js with Express</li>
+            <li><strong>Database:</strong> MongoDB</li>
+            <li><strong>Authentication:</strong> JWT</li>
+            <li><strong>File Upload:</strong> Cloudinary</li>
+            <li><strong>Payments:</strong> Razorpay</li>
+        </ul>
+        
+        <div style="text-align: center; margin: 30px 0;">
+            <a href="https://gowrishankar10.github.io/photoprintingsite/" class="btn" target="_blank">Visit Live Application</a>
+            <a href="https://github.com/gowrishankar10/photoprintingsite" class="btn secondary" target="_blank">View Source Code</a>
+        </div>
+        
+        <footer>
+            <p>PhotoPrintX - Professional Photo Printing Solutions</p>
+        </footer>
     </div>
 </body>
 </html>
